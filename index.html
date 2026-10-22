@@ -3,300 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Swiss Dent — Стоматологічна клініка на Бориспільській (Київ)</title>
+  <title>Swiss Dent — Стоматологічна клініка (вул. Бориспільська, 4)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; background-color: #0b1320; color: #f1f5f9; }
-    .card { background: #131f33; border: 1px solid #1e293b; }
-    .card-active { border-color: #38bdf8; background: #162a45; }
-    .tab-selected { background: #0284c7; color: #ffffff; border-color: #38bdf8; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      -webkit-user-select: none;
+      background-color: #f8fafc;
+    }
+    .watermark-overlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 60;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'%3E%3Ctext x='20' y='110' fill='rgba(0,50,150,0.045)' font-size='13' font-family='sans-serif' font-weight='bold' transform='rotate(-26 160 110)'%3EAIUX PREVIEW • ДЕМО-МАКЕТ • НЕ ДЛЯ КОПІЮВАННЯ%3C/text%3E%3C/svg%3E");
+    }
   </style>
 </head>
-<body oncontextmenu="return false;" class="select-none antialiased pb-28 selection:bg-sky-500 selection:text-white bg-[#060a12]"><div class="max-w-md mx-auto min-h-screen bg-[#0b1320] relative">
-    <!-- Security Watermark Overlay -->
-    <div class="fixed inset-0 pointer-events-none z-50 select-none overflow-hidden" 
-         style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+CiAgPHRleHQgeD0iMzAiIHk9IjEwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA3KSIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjUgMTUwIDEwMCkiIGxldHRlci1zcGFjaW5nPSIyIj4KICAgIEFJVVggUFJFVklFVyDigKIg0JTQldCc0J4t0JzQkNCa0JXQogogIDwvdGV4dD4KPC9zdmc+'); background-repeat: repeat;">
-    </div>
-    
- 
+<body class="text-slate-800 antialiased" oncontextmenu="return false;">
 
-  <!-- TOP BAR -->
-  <header class="border-b border-slate-800 bg-[#0b1320]/95 backdrop-blur sticky top-0 z-50 px-4 py-3 flex items-center justify-between">
-    <div class="flex items-center space-x-2.5">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center font-extrabold text-white text-base shadow-lg shadow-sky-500/20">
-        +
+  <!-- Watermark Pattern Overlay -->
+  <div class="watermark-overlay"></div>
+
+  <!-- Mobile Container -->
+  <div class="max-w-md mx-auto min-h-screen bg-white shadow-xl relative border-x border-slate-200 flex flex-col justify-between pb-28">
+
+    <!-- Top Watermark Disclaimer Pill -->
+    <div class="bg-amber-500 text-slate-950 text-[11px] font-bold py-1.5 px-3 text-center tracking-wide uppercase border-b border-amber-600">
+      Концепт оновлення для Swiss Dent • AIUX Solutions
+    </div>
+
+    <!-- Header matching authentic Swiss Dent brand (Medical White + Blue + Swiss Cross) -->
+    <header class="px-4 py-3 bg-white border-b border-slate-100 sticky top-0 z-40 shadow-xs">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2.5">
+          <!-- Swiss Dent Cross Logo -->
+          <div class="w-10 h-10 rounded-full bg-[#e30613] flex items-center justify-center shadow-sm relative overflow-hidden flex-shrink-0">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 4h4v6h6v4h-6v6h-4v-6H4v-4h6V4z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center space-x-1">
+              <span class="font-bold text-lg tracking-tight text-[#003b73]">Swiss Dent</span>
+              <span class="text-[10px] bg-blue-50 text-[#003b73] font-semibold px-1.5 py-0.5 rounded border border-blue-200">Київ</span>
+            </div>
+            <p class="text-[11px] text-slate-500 font-medium leading-none">Стоматологічна клініка</p>
+          </div>
+        </div>
+
+        <a href="tel:0982200505" class="flex items-center space-x-1.5 bg-blue-50 hover:bg-blue-100 text-[#003b73] px-3 py-1.5 rounded-full border border-blue-200 font-semibold text-xs transition">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>098 220 05 05</span>
+        </a>
       </div>
+
+      <!-- Specific Branch Badge (Immediate geo-relevance) -->
+      <div class="mt-2.5 flex items-center justify-between bg-slate-50 border border-slate-200/80 rounded-lg px-2.5 py-1.5 text-[12px]">
+        <div class="flex items-center space-x-1.5 text-slate-700 font-medium">
+          <svg class="w-4 h-4 text-[#e30613] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+          <span>Відділення: <strong class="text-slate-900 font-semibold">вул. Бориспільська, 4</strong></span>
+        </div>
+        <span class="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Відчинено
+        </span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-4 space-y-4">
+
+      <!-- Hero Callout: Problem solved in seconds -->
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50/50 rounded-xl p-3.5 border border-blue-100">
+        <h1 class="text-[17px] font-bold text-[#003b73] leading-snug">Швидкий запис до лікаря на Бориспільській</h1>
+        <p class="text-xs text-slate-600 mt-1">Оберіть потрібну послугу або симптом. Адміністратор підтвердить час за 2 хвилини у месенджері.</p>
+      </div>
+
+      <!-- Interactive Services Grid (Prices 'від') -->
       <div>
-        <div class="text-sm font-extrabold text-white tracking-tight flex items-center gap-1.5">
-          Swiss Dent
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500">Популярні послуги та ціни</h2>
+          <span class="text-[11px] text-slate-400">Оберіть для запису</span>
         </div>
-        <div class="text-[11px] text-slate-400">Стоматологія на Бориспільській</div>
-      </div>
-    </div>
-    <a href="tel:+380982200505" class="text-xs font-bold text-sky-400 bg-sky-500/20 border border-sky-400/50 text-sky-300 px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-sm active:scale-95 transition">
-      <span>📞</span> 098 220 05 05
-    </a>
-  </header>
 
-  <!-- HERO -->
-  <section class="relative">
-    <div class="h-56 w-full relative overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" 
-           alt="Стоматологічна клініка Swiss Dent Київ" 
-           class="w-full h-full object-cover brightness-[0.45]">
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0b1320] via-[#0b1320]/40 to-transparent"></div>
-      <div class="absolute bottom-3 left-4 right-4">
-        <div class="inline-flex items-center gap-1.5 bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full mb-2">
-          <span>📍</span> вул. Бориспільська, 4 • Дарницький район
-        </div>
-        <h1 class="text-xl font-extrabold text-white leading-tight">
-          Сучасне лікування зубів без болю та черг
-        </h1>
-        <p class="text-xs text-slate-300 mt-1">
-          Швейцарські стандарти точності. Щодня з 9:00 до 21:00 без вихідних.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST STATS -->
-  <section class="px-4 py-3 bg-[#131f33] border-y border-slate-800/80 grid grid-cols-3 gap-2 text-center">
-    <div>
-      <div class="text-base font-extrabold text-white">12+ років</div>
-      <div class="text-[10px] text-slate-400">досвіду в Києві</div>
-    </div>
-    <div class="border-x border-slate-800">
-      <div class="text-base font-extrabold text-amber-400">★ 4.8 / 5.0</div>
-      <div class="text-[10px] text-slate-400">Google відгуки</div>
-    </div>
-    <div>
-      <div class="text-base font-extrabold text-emerald-400">100%</div>
-      <div class="text-[10px] text-slate-400">гарантія на пломби</div>
-    </div>
-  </section>
-
-  <!-- INTERACTIVE BOOKING SELECTOR -->
-  <section class="p-4 space-y-4">
-    <div class="flex items-center justify-between">
-      <div>
-        <h2 class="text-sm font-extrabold text-white uppercase tracking-wider">Швидкий запис на прийом</h2>
-        <p class="text-xs text-slate-400">Оберіть потрібну послугу та зручний час</p>
-      </div>
-      <span class="text-[11px] font-bold text-sky-400 bg-sky-950/60 border border-sky-800/50 px-2 py-0.5 rounded-lg">Крок 1 із 2</span>
-    </div>
-
-    <!-- SERVICES LIST -->
-    <div class="space-y-2.5" id="servicesContainer">
-      <div class="card p-3 rounded-xl cursor-pointer transition active:scale-[0.99] card-active" onclick="selectService(this, 'Професійна гігієна Air Flow + ультразвук', '1 200 грн')">
-        <div class="flex justify-between items-start">
-          <div class="flex items-start gap-2.5">
-            <div class="text-xl">✨</div>
-            <div>
-              <div class="text-sm font-bold text-white">Комплексна чистка Air Flow</div>
-              <div class="text-[11px] text-slate-400">Ультразвукове зняття каменю, содоструй та фторування</div>
+        <div class="grid grid-cols-2 gap-2" id="servicesGrid">
+          <!-- Card 1 -->
+          <div onclick="selectService('Огляд та консультація', '0 грн (при лікуванні)', this)" 
+               class="service-card cursor-pointer border-2 border-blue-500 bg-blue-50/60 p-2.5 rounded-xl transition-all shadow-xs relative">
+            <div class="flex items-center justify-between">
+              <span class="text-lg">🩺</span>
+              <span class="text-[10px] font-bold text-[#003b73] bg-white px-1.5 py-0.5 rounded shadow-xs">ТОП</span>
             </div>
+            <div class="font-bold text-[13px] text-slate-900 mt-1">Огляд лікаря</div>
+            <div class="text-[11px] text-emerald-700 font-semibold mt-0.5">0 грн <span class="text-slate-500 font-normal">при лікуванні</span></div>
           </div>
-          <div class="text-right whitespace-nowrap pl-2">
-            <span class="text-xs font-extrabold text-sky-400">1 200 грн</span>
-            <div class="text-[9px] text-slate-500">~45 хв</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="card p-3 rounded-xl cursor-pointer transition active:scale-[0.99]" onclick="selectService(this, 'Лікування карієсу та фотополімерна пломба', 'від 950 грн')">
-        <div class="flex justify-between items-start">
-          <div class="flex items-start gap-2.5">
-            <div class="text-xl">🦷</div>
-            <div>
-              <div class="text-sm font-bold text-white">Пломбування / Лікування карієсу</div>
-              <div class="text-[11px] text-slate-400">Німецькі фотополімерні матеріали з підбором кольору</div>
+          <!-- Card 2 -->
+          <div onclick="selectService('Професійна чистка зубів', 'від 950 грн', this)" 
+               class="service-card cursor-pointer border border-slate-200 bg-white p-2.5 rounded-xl hover:border-blue-300 transition-all shadow-xs">
+            <div class="text-lg">✨</div>
+            <div class="font-bold text-[13px] text-slate-900 mt-1">Air-Flow чистка</div>
+            <div class="text-[11px] text-slate-600 font-medium mt-0.5">від <strong class="text-[#003b73]">950 грн</strong></div>
+          </div>
+
+          <!-- Card 3 -->
+          <div onclick="selectService('Лікування карієсу / пломба', 'від 1 200 грн', this)" 
+               class="service-card cursor-pointer border border-slate-200 bg-white p-2.5 rounded-xl hover:border-blue-300 transition-all shadow-xs">
+            <div class="text-lg">🦷</div>
+            <div class="font-bold text-[13px] text-slate-900 mt-1">Лікування карієсу</div>
+            <div class="text-[11px] text-slate-600 font-medium mt-0.5">від <strong class="text-[#003b73]">1 200 грн</strong></div>
+          </div>
+
+          <!-- Card 4 -->
+          <div onclick="selectService('Швейцарська імплантація', 'від 9 500 грн', this)" 
+               class="service-card cursor-pointer border border-slate-200 bg-white p-2.5 rounded-xl hover:border-blue-300 transition-all shadow-xs">
+            <div class="flex items-center justify-between">
+              <span class="text-lg">🔩</span>
+              <span class="text-[10px] font-bold text-red-600 bg-red-50 px-1 rounded">Swiss</span>
             </div>
+            <div class="font-bold text-[13px] text-slate-900 mt-1">Імплантація</div>
+            <div class="text-[11px] text-slate-600 font-medium mt-0.5">від <strong class="text-[#003b73]">9 500 грн</strong></div>
           </div>
-          <div class="text-right whitespace-nowrap pl-2">
-            <span class="text-xs font-extrabold text-sky-400">від 950 грн</span>
-            <div class="text-[9px] text-slate-500">~50 хв</div>
+
+          <!-- Card 5 -->
+          <div onclick="selectService('Керамічні вініри', 'від 7 000 грн', this)" 
+               class="service-card cursor-pointer border border-slate-200 bg-white p-2.5 rounded-xl hover:border-blue-300 transition-all shadow-xs">
+            <div class="text-lg">💎</div>
+            <div class="font-bold text-[13px] text-slate-900 mt-1">Керамічні вініри</div>
+            <div class="text-[11px] text-slate-600 font-medium mt-0.5">від <strong class="text-[#003b73]">7 000 грн</strong></div>
+          </div>
+
+          <!-- Card 6: Гострий біль -->
+          <div onclick="selectService('Невідкладна допомога (гострий біль)', 'терміново', this)" 
+               class="service-card cursor-pointer border border-red-200 bg-red-50/40 p-2.5 rounded-xl hover:border-red-400 transition-all shadow-xs">
+            <div class="text-lg">🚨</div>
+            <div class="font-bold text-[13px] text-red-700 mt-1">Гострий біль</div>
+            <div class="text-[11px] text-red-600 font-medium mt-0.5">Прийом без черги</div>
           </div>
         </div>
       </div>
 
-      <div class="card p-3 rounded-xl cursor-pointer transition active:scale-[0.99]" onclick="selectService(this, 'Професійне відбілювання зубів Beyond', '2 900 грн')">
-        <div class="flex justify-between items-start">
-          <div class="flex items-start gap-2.5">
-            <div class="text-xl">💎</div>
-            <div>
-              <div class="text-sm font-bold text-white">Відбілювання зубів Beyond Polus</div>
-              <div class="text-[11px] text-slate-400">Безпечне освітлення емалі на 5–8 тонів за 1 сеанс</div>
-            </div>
-          </div>
-          <div class="text-right whitespace-nowrap pl-2">
-            <span class="text-xs font-extrabold text-sky-400">2 900 грн</span>
-            <div class="text-[9px] text-slate-500">~60 хв</div>
-          </div>
+      <!-- Selected Summary Banner -->
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 flex items-center justify-between">
+        <div>
+          <div class="text-[11px] text-slate-500 uppercase font-bold tracking-wider">Обрана послуга:</div>
+          <div class="font-bold text-sm text-[#003b73]" id="currentServiceName">Огляд лікаря</div>
+          <div class="text-xs text-slate-600" id="currentServicePrice">Орієнтовно: 0 грн (при лікуванні)</div>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-blue-100 text-[#003b73] flex items-center justify-center font-bold text-sm flex-shrink-0">
+          ✓
         </div>
       </div>
 
-      <div class="card p-3 rounded-xl cursor-pointer transition active:scale-[0.99]" onclick="selectService(this, 'Первинна консультація стоматолога з планом лікування', 'Безкоштовно')">
-        <div class="flex justify-between items-start">
-          <div class="flex items-start gap-2.5">
-            <div class="text-xl">📋</div>
-            <div>
-              <div class="text-sm font-bold text-white">Консультація та огляд лікаря</div>
-              <div class="text-[11px] text-slate-400">Детальний огляд, прицільний знімок та план лікування</div>
-            </div>
-          </div>
-          <div class="text-right whitespace-nowrap pl-2">
-            <span class="text-xs font-extrabold text-emerald-400">0 грн</span>
-            <div class="text-[9px] text-emerald-500/80 uppercase font-bold">Акція</div>
-          </div>
+      <!-- Trust Badges (Why Swiss Dent on Boryspilska) -->
+      <div class="grid grid-cols-3 gap-2 pt-1 text-center">
+        <div class="bg-slate-50 border border-slate-100 rounded-lg p-2">
+          <div class="text-base font-bold text-[#003b73]">15+</div>
+          <div class="text-[10px] text-slate-500 leading-tight mt-0.5">років досвіду лікарів</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-100 rounded-lg p-2">
+          <div class="text-base font-bold text-[#003b73]">100%</div>
+          <div class="text-[10px] text-slate-500 leading-tight mt-0.5">безболісна анестезія</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-100 rounded-lg p-2">
+          <div class="text-base font-bold text-[#e30613]">Swiss</div>
+          <div class="text-[10px] text-slate-500 leading-tight mt-0.5">протоколи лікування</div>
         </div>
       </div>
 
-      <div class="card p-3 rounded-xl cursor-pointer transition active:scale-[0.99]" onclick="selectService(this, 'Консультація з імплантації під ключ', 'від 9 500 грн')">
-        <div class="flex justify-between items-start">
-          <div class="flex items-start gap-2.5">
-            <div class="text-xl">🔩</div>
-            <div>
-              <div class="text-sm font-bold text-white">Імплантація зубів (Megagen / Straumann)</div>
-              <div class="text-[11px] text-slate-400">Довічна гарантія виробника, приживлюваність 99.2%</div>
-            </div>
-          </div>
-          <div class="text-right whitespace-nowrap pl-2">
-            <span class="text-xs font-extrabold text-sky-400">від 9 500 грн</span>
-            <div class="text-[9px] text-slate-500">під ключ</div>
-          </div>
+      <!-- Doctor team note -->
+      <div class="text-xs text-slate-500 text-center pt-1">
+        📍 вул. Бориспільська, 4 • Пн-Нд: 09:00 - 21:00
+      </div>
+
+    </main>
+
+    <!-- Bottom Sticky Quick Action Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 py-2.5 px-4 shadow-2xl">
+      <div class="max-w-md mx-auto">
+        <div class="text-[11px] text-slate-500 mb-1.5 font-medium flex items-center justify-between">
+          <span>Записатися в 1 клік на зручний час:</span>
+          <span class="text-emerald-600 font-semibold flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> онлайн
+          </span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2">
+          <!-- Viber Button -->
+          <a id="viberBtn" href="viber://chat?number=%2B380982200505" 
+             class="flex items-center justify-center space-x-1.5 bg-[#7360f2] hover:bg-[#6351e0] text-white py-2.5 rounded-xl font-bold text-xs shadow-sm transition active:scale-95">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.4 15.6c-.6-.4-2.1-1-2.4-1.1-.3-.1-.5-.1-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.1-1.4-.5-2.6-1.6-.9-.8-1.5-1.9-1.7-2.2-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.2-.7-1.8-1-2.4-.3-.6-.6-.5-.8-.5h-.7c-.2 0-.6.1-.9.4C7.2 8.1 6.3 9 6.3 10.8c0 1.8 1.3 3.5 1.5 3.7.2.3 2.6 4 6.3 5.6 3.7 1.6 3.7 1.1 4.4 1 .7-.1 2.2-.9 2.5-1.8.3-.8.3-1.6.2-1.7-.1-.2-.3-.3-.6-.5z"/></svg>
+            <span>Viber</span>
+          </a>
+
+          <!-- Telegram Button -->
+          <a id="tgBtn" href="https://t.me/+380982200505" target="_blank" 
+             class="flex items-center justify-center space-x-1.5 bg-[#229ed9] hover:bg-[#1d8bc0] text-white py-2.5 rounded-xl font-bold text-xs shadow-sm transition active:scale-95">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+            <span>Telegram</span>
+          </a>
+
+          <!-- Direct Call Button -->
+          <a href="tel:0982200505" 
+             class="flex items-center justify-center space-x-1.5 bg-[#003b73] hover:bg-[#002b55] text-white py-2.5 rounded-xl font-bold text-xs shadow-sm transition active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>Дзвінок</span>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- DAY SELECTOR -->
-    <div class="pt-2">
-      <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Зручний день візиту</label>
-      <div class="grid grid-cols-4 gap-1.5" id="dayButtons">
-        <button type="button" class="py-2 px-1 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] tab-selected" onclick="selectDay(this, 'Сьогодні')">
-          Сьогодні
-        </button>
-        <button type="button" class="py-2 px-1 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] text-slate-300" onclick="selectDay(this, 'Завтра')">
-          Завтра
-        </button>
-        <button type="button" class="py-2 px-1 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] text-slate-300" onclick="selectDay(this, 'Субота / Неділя')">
-          Вихідні
-        </button>
-        <button type="button" class="py-2 px-1 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] text-slate-300" onclick="selectDay(this, 'Найближчий вільний день')">
-          Будь-який
-        </button>
-      </div>
-    </div>
-
-    <!-- TIME SELECTOR -->
-    <div class="pt-1">
-      <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Зручний час доби</label>
-      <div class="grid grid-cols-3 gap-2" id="timeButtons">
-        <button type="button" class="py-2 px-2 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] tab-selected" onclick="selectTime(this, 'Ранок (09:00 - 13:00)')">
-          🌅 Ранок<br><span class="text-[10px] font-normal text-slate-400">09:00 - 13:00</span>
-        </button>
-        <button type="button" class="py-2 px-2 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] text-slate-300" onclick="selectTime(this, 'День (13:00 - 17:00)')">
-          ☀️ День<br><span class="text-[10px] font-normal text-slate-400">13:00 - 17:00</span>
-        </button>
-        <button type="button" class="py-2 px-2 text-center rounded-xl text-xs font-bold border border-slate-700 bg-[#131f33] text-slate-300" onclick="selectTime(this, 'Вечір (17:00 - 21:00)')">
-          🌙 Вечір<br><span class="text-[10px] font-normal text-slate-400">17:00 - 21:00</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- WHY CHOOSE US -->
-    <div class="card p-3.5 rounded-xl space-y-2 mt-4 bg-gradient-to-br from-[#131f33] to-[#0e1726]">
-      <div class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
-        <span>🛡️</span> Чому обирають Swiss Dent на Бориспільській:
-      </div>
-      <ul class="text-[11px] text-slate-300 space-y-1.5">
-        <li class="flex items-center gap-2">
-          <span class="text-emerald-400 font-bold">✓</span> Безболісна анестезія та безпечний протокол стерилізації
-        </li>
-        <li class="flex items-center gap-2">
-          <span class="text-emerald-400 font-bold">✓</span> Фіксовані прозорі ціни без доплат під час прийому
-        </li>
-        <li class="flex items-center gap-2">
-          <span class="text-emerald-400 font-bold">✓</span> 5 хвилин пішки від зупинок громадського транспорту
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- BOTTOM FIXED 1-TAP CTA BAR -->
-  <div class="fixed bottom-0 left-0 right-0 p-3 bg-[#0b1320]/95 backdrop-blur-md border-t border-slate-800 z-50 max-w-md mx-auto">
-    <div class="flex items-center justify-between text-[11px] text-slate-300 mb-2 px-1">
-      <div>Обрано: <strong id="summaryService" class="text-sky-300 font-semibold">Чистка Air Flow</strong></div>
-      <div id="summaryTime" class="text-slate-400 font-medium">Сьогодні • Ранок</div>
-    </div>
-    <div class="grid grid-cols-2 gap-2">
-      <a id="btnTelegram" href="#" target="_blank" class="py-2.5 px-3 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold text-center flex items-center justify-center gap-1.5 shadow-lg shadow-sky-600/30 active:scale-95 transition">
-        <span>✈️</span> Запис у Telegram
-      </a>
-      <a id="btnViber" href="#" target="_blank" class="py-2.5 px-3 rounded-xl bg-purple-700 hover:bg-purple-600 text-white text-xs font-bold text-center flex items-center justify-center gap-1.5 shadow-lg shadow-purple-700/30 active:scale-95 transition">
-        <span>🟣</span> Запис у Viber
-      </a>
-    </div>
   </div>
 
   <script>
-    let currentService = 'Професійна гігієна Air Flow + ультразвук';
-    let currentDay = 'Сьогодні';
-    let currentTime = 'Ранок (09:00 - 13:00)';
-    const phone = '380982200505';
+    let selectedServiceName = "Огляд лікаря";
 
-    function updateCTALinks() {
-      const summaryServiceEl = document.getElementById('summaryService');
-      const summaryTimeEl = document.getElementById('summaryTime');
-      
-      summaryServiceEl.textContent = currentService.length > 25 ? currentService.slice(0, 25) + '…' : currentService;
-      summaryTimeEl.textContent = currentDay + ' • ' + currentTime.split(' ')[0];
+    function selectService(name, price, el) {
+      selectedServiceName = name;
+      document.getElementById('currentServiceName').innerText = name;
+      document.getElementById('currentServicePrice').innerText = 'Орієнтовно: ' + price;
 
-      const text = encodeURIComponent(`Доброго дня! Хочу записатися у Swiss Dent на Бориспільській:\n- Послуга: ${currentService}\n- День: ${currentDay}\n- Бажаний час: ${currentTime}`);
-      
-      // Update Telegram link
-      const tgLink = `https://t.me/+${phone}?text=${text}`;
-      document.getElementById('btnTelegram').href = tgLink;
-
-      // Update Viber link
-      const viberLink = `viber://chat?number=%2B${phone}`;
-      document.getElementById('btnViber').href = viberLink;
-    }
-
-    function selectService(el, name, price) {
-      document.querySelectorAll('#servicesContainer .card').forEach(c => c.classList.remove('card-active'));
-      el.classList.add('card-active');
-      currentService = name;
-      updateCTALinks();
-    }
-
-    function selectDay(el, day) {
-      document.querySelectorAll('#dayButtons button').forEach(b => {
-        b.classList.remove('tab-selected');
-        b.classList.add('text-slate-300');
+      // Update card styles
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.className = "service-card cursor-pointer border border-slate-200 bg-white p-2.5 rounded-xl hover:border-blue-300 transition-all shadow-xs";
       });
-      el.classList.add('tab-selected');
-      el.classList.remove('text-slate-300');
-      currentDay = day;
-      updateCTALinks();
+      el.className = "service-card cursor-pointer border-2 border-blue-500 bg-blue-50/60 p-2.5 rounded-xl transition-all shadow-xs relative";
+
+      // Update messager intent links
+      const msg = encodeURIComponent(`Вітаю! Хочу записатися на прийом у Swiss Dent (Бориспільська, 4) на послугу: "${name}". Підкажіть найближчий вільний час.`);
+      document.getElementById('tgBtn').href = `https://t.me/share/url?url=&text=${msg}`;
+      document.getElementById('viberBtn').href = `viber://forward?text=${msg}`;
     }
 
-    function selectTime(el, time) {
-      document.querySelectorAll('#timeButtons button').forEach(b => {
-        b.classList.remove('tab-selected');
-        b.classList.add('text-slate-300');
-      });
-      el.classList.add('tab-selected');
-      el.classList.remove('text-slate-300');
-      currentTime = time;
-      updateCTALinks();
-    }
-
-    // Initialize links
-    updateCTALinks();
+    // Initialize with default message
+    selectService('Огляд лікаря', '0 грн (при лікуванні)', document.querySelector('.service-card'));
   </script>
-</div></body>
+</body>
 </html>
